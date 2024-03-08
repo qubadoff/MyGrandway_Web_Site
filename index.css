@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Poppins&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --color-primary: #0c30ef;
   --color-secondary: #1c1a1a;
@@ -442,6 +442,8 @@ table {
 }
 .footer_title{
   margin-bottom: 1rem;
+  font-family: "Work Sans", sans-serif;
+
 }
 .footer_logo{
   margin-bottom: 2rem;
