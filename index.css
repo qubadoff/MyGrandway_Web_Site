@@ -314,6 +314,7 @@ table {
     background-color: var(--color-primary);
     color: var(--secondary-white);
     font-weight: 600;
+    cursor: pointer;
 }
 .process--number-black{
   width: 3.688rem;
@@ -322,8 +323,17 @@ table {
   background-color: var(--color-secondary);
   color: var(--secondary-white);
   font-weight: 600;
+  cursor: pointer;
 }
 
+.rotateImg{
+  transform: rotate(45deg);
+  transition: 400ms;
+}
+.rotateBack{
+  transform: rotate(0deg);
+  transition: 400ms;
+}
 #faq{
     background-color: var(--section-backg);
 }
@@ -335,10 +345,12 @@ table {
 }
 .faq_questioncard--container{
   width: 50%;
+  margin-bottom: 1rem;
+  
 }
 .faq_image--container{
   width: 29.625rem;
-  height: 34.188rem;
+ 
 }
 .faq_image{
   width: 100%;
@@ -349,6 +361,8 @@ table {
   width: 100%;
   padding: 0 2rem;
 }
+
+
 .question--card{
   padding: 1rem 1.5rem;
   background-color: white;
@@ -360,7 +374,27 @@ table {
 .question--card-questions{
   width: calc(100% - 60px);
   line-height: 1.5rem;
- font-size: 17px;
+  font-size: 17px;
+}
+
+.open-answer{
+  opacity: 0;
+  visibility: hidden ;
+  height: 0 ;
+  transition: 0ms;
+
+}
+.question--card-questions-open{
+  /* width: calc(100% - 60px); */
+  line-height: 1.5rem;
+  font-size: 17px;
+  margin-top: 0.5rem; 
+  font-size: 14px; 
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: 500ms;
+  height: 100%;
 }
 
 
@@ -507,9 +541,10 @@ table {
   .faq_image--container{
     width: auto;
     height: auto;
+    margin-bottom: -3px;
   }
   .question--card-questions{
-    width: 76%;
+    width: 100%;
   }
   .process--number-black{
     width: 3.2rem;
@@ -632,7 +667,7 @@ table {
     height: auto;
   }
   .question--card-questions{
-    width: 76%;
+    width: 100%;
   }
   .process--number-black{
     width: 3.2rem;
@@ -641,6 +676,7 @@ table {
     background-color: var(--color-secondary);
     color: var(--secondary-white);
     font-weight: 600;
+    
   }
   .process--number {
     width: 3.2rem;
@@ -689,7 +725,7 @@ table {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .hero_image-container {
     width: calc(788px - 100px);
-    height: calc(716px - 100px);
+    height: calc(644px - 100px);
     right: 28px;
     top: 1rem;
   }
@@ -699,7 +735,7 @@ table {
 @media only screen and (min-width: 1025px) and (max-width: 1201px)  {
   .hero_image-container {
     width: calc(888px - 100px);
-    height: calc(716px - 100px);
+    height: calc(644px - 100px);
     right: 28px;
     top: 1rem;
   }
@@ -709,7 +745,7 @@ table {
 @media only screen and (min-width: 1201px) {
   .hero_image-container {
     width: calc(1148px - 100px);
-    height: calc(816px - 100px);
+    height: calc(756px - 100px);
     right: -10px;
     
   }
@@ -717,7 +753,7 @@ table {
 @media only screen and (min-width: 1426px) {
   .hero_image-container {
     width: calc(1148px - 100px);
-    height: calc(856px - 100px);
+    height: calc(756px - 100px);
     right: -150px;
     
   }
